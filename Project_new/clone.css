@@ -1,0 +1,471 @@
+@import"https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sora:wght@300;500;600;800&display=swap";* {
+    --font-primary: "Sora", system-ui, sans-serif;
+    --font-secondary: "Roboto Mono", monospace;
+    --max-layout-width: 1080px
+}
+body{
+    box-sizing: border-box;
+    position: relative;
+    background: linear-gradient(96deg,#191029 2.6%,#564f66 55.92%,#1d132d 96.53%)
+}
+.navbar ul{
+    height: 50px;
+}
+.navbar ul{
+    /* margin-top: 50px; */
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0px;
+    justify-content: left;
+    overflow: hidden;
+}
+.navbar ul a{
+    /* margin-top: 10px */
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    transition-duration: 700ms;
+    transition-delay: 0.1s;
+    border-radius: 10% 10% 10% 10%;
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+}
+* {
+    font-family: var(--font-primary);
+    user-select: none;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-y: none;
+    color: #fff
+}
+
+span {
+    font-family: inherit
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+html.lenis {
+    height: auto
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none
+}
+
+img {
+    display: block
+}
+
+p {
+    line-height: 1.8em;
+    font-weight: 300
+}
+
+section {
+    margin: 0 auto;
+    max-width: var(--max-layout-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 1rem
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center
+}
+
+body {
+    background: linear-gradient(180deg,#695870 50%,rgb(102, 87, 123) 100%);
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size:14px
+    }
+
+    h2 {
+        font-size: 2.4rem
+    }
+
+    section {
+        padding: 4rem 1rem
+    }
+
+    body {
+        max-width: 100vw
+    }
+}
+
+.nav-container[data-astro-cid-5blmo7yk] {
+    width: 100%;
+    max-width: 100%;
+    height: min-content;
+    padding: 1rem;
+    z-index: 10
+}
+
+nav[data-astro-cid-5blmo7yk] {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .8rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--max-layout-width)
+}
+
+.nav-socials[data-astro-cid-5blmo7yk] {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.nav-main[data-astro-cid-5blmo7yk] {
+    display: flex;
+    gap: 1rem;
+    list-style: none
+}
+
+.nav-socials[data-astro-cid-5blmo7yk] a[data-astro-cid-5blmo7yk] {
+    color: #fff;
+    height: min-content;
+    opacity: .4;
+    transition: opacity .2s ease
+}
+
+.nav-socials[data-astro-cid-5blmo7yk] a[data-astro-cid-5blmo7yk]:hover {
+    opacity: .8
+}
+
+.nav-main[data-astro-cid-5blmo7yk] li[data-astro-cid-5blmo7yk] {
+    transition: transform .2s ease;
+    position: relative;
+    cursor: pointer
+}
+
+.nav-main[data-astro-cid-5blmo7yk] li[data-astro-cid-5blmo7yk]:hover {
+    transform: scale(1.1) rotate(-4deg)
+}
+
+.nav-main[data-astro-cid-5blmo7yk] li[data-astro-cid-5blmo7yk]:after {
+    content: "";
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: currentColor;
+    transition: width .2s ease
+}
+
+.nav-main[data-astro-cid-5blmo7yk] li[data-astro-cid-5blmo7yk]:hover:after {
+    width: 100%
+}
+
+.nav-main[data-astro-cid-5blmo7yk] a[data-astro-cid-5blmo7yk] {
+    text-decoration: none;
+    letter-spacing: -.04em
+}
+
+@media (max-width: 600px) {
+    .nav-socials[data-astro-cid-5blmo7yk] {
+        display:none
+    }
+
+    .nav-main[data-astro-cid-5blmo7yk] {
+        width: 100%;
+        display: flex;
+        justify-content: center
+    }
+}
+
+footer[data-astro-cid-5jp7rtjd] {
+    opacity: .5
+}
+
+.wrapper[data-astro-cid-5jp7rtjd] {
+    max-width: var(--max-layout-width);
+    margin: 0 auto;
+    padding: 1.4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,.4)
+}
+
+.wrapper[data-astro-cid-5jp7rtjd]>div[data-astro-cid-5jp7rtjd]:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem
+}
+
+a[data-astro-cid-5jp7rtjd] {
+    font-size: .9rem;
+    text-decoration: none
+}
+
+a[data-astro-cid-5jp7rtjd]:hover {
+    text-decoration: underline
+}
+
+.footer-socials[data-astro-cid-5jp7rtjd] {
+    list-style: none;
+    display: flex;
+    gap: 1rem
+}
+
+@media (max-width: 600px) {
+    .footer-socials[data-astro-cid-5jp7rtjd] {
+        display:none
+    }
+}
+
+img[data-astro-cid-vnzlvqnm] {
+    height: 2em;
+    margin-right: .6em;
+    transition: transform .2s ease
+}
+
+a[data-astro-cid-vnzlvqnm] {
+    position: relative;
+    cursor: pointer;
+    transition: transform .2s ease;
+    text-decoration: none
+}
+
+a[data-astro-cid-vnzlvqnm]:hover {
+    transform: scale(1.05)
+}
+
+a[data-astro-cid-vnzlvqnm]:hover img[data-astro-cid-vnzlvqnm] {
+    transform: scale(1.3) translateY(-10%) rotate(-6deg)
+}
+
+a[data-astro-cid-vnzlvqnm]:active {
+    transform: scale(.95)
+}
+
+.button-contents[data-astro-cid-vnzlvqnm] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.1);
+    padding: .4rem 1rem
+}
+
+.button-contents[data-astro-cid-vnzlvqnm] span[data-astro-cid-vnzlvqnm] {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 500
+}
+
+
+#temp-effect[data-astro-cid-ktuztyka] {
+    position: absolute;
+    top: -160%;
+    left: 7%;
+    width: 80%;
+    z-index: 0;
+    mix-blend-mode: screen;
+    transform: rotate(60deg);
+    filter: sepia(100%) saturate(200%)
+}
+
+header[data-astro-cid-shwxrd6l] {
+    width: 100%;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 2.75rem
+}
+
+.wrapper[data-astro-cid-shwxrd6l] {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%
+}
+
+.header-content[data-astro-cid-shwxrd6l] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1rem
+}
+
+h2[data-astro-cid-shwxrd6l] {
+    font-family: var(--font-primary);
+    font-size: 1.18rem;
+    font-weight: 300;
+    line-height: 180%;
+    letter-spacing: -.02em;
+    max-width: 50ch;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto
+}
+
+.header-cta[data-astro-cid-shwxrd6l] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0rem;
+    justify-content: center
+}
+
+.sponsors[data-astro-cid-shwxrd6l] {
+    padding-top: 4rem;
+    overflow: hidden
+}
+
+.sponsors[data-astro-cid-shwxrd6l] p[data-astro-cid-shwxrd6l] {
+    font-size: .87rem;
+    font-weight: 500;
+    line-height: 1.8em;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    opacity: .4;
+    margin-bottom: .75rem;
+    text-align: center;
+    margin-top: 2rem
+}
+
+#sponsors-flag[data-astro-cid-shwxrd6l] img[data-astro-cid-shwxrd6l] {
+    margin: 0 auto;
+    width: 240px;
+    height: auto
+}
+
+.sponsors-marquee[data-astro-cid-shwxrd6l] {
+    display: flex;
+    gap: 2.25rem;
+    justify-content: center;
+    align-items: center
+}
+
+.sponsors-marquee[data-astro-cid-shwxrd6l] a[data-astro-cid-shwxrd6l],#sponsor-headout[data-astro-cid-shwxrd6l] {
+    opacity: .5;
+    transition: opacity .2s ease
+}
+
+.sponsors-marquee[data-astro-cid-shwxrd6l] a[data-astro-cid-shwxrd6l]:hover,#sponsor-headout[data-astro-cid-shwxrd6l]:hover {
+    opacity: 1
+}
+
+@media (max-width: 600px) {
+    h2[data-astro-cid-shwxrd6l] {
+        font-size:1rem
+    }
+
+    #sponsor-headout[data-astro-cid-shwxrd6l] img[data-astro-cid-shwxrd6l] {
+        width: 156px
+    }
+}
+
+
+
+p[data-astro-cid-oqjbs5yv] {
+    max-height: 0px;
+    transition: max-height .15s ease-out;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0;
+    will-change: max-height;
+    opacity: .8
+}
+
+
+
+p[data-astro-cid-z7zex2ul] {
+    line-height: 1.8em
+}
+
+section[data-astro-cid-z7zex2ul] {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 1rem;
+    padding: 4rem 1rem
+}
+
+h2[data-astro-cid-z7zex2ul] {
+    text-align: left
+}
+
+@media (max-width: 600px) {
+    section[data-astro-cid-z7zex2ul] {
+        grid-template-columns:1fr
+    }
+
+    h2[data-astro-cid-z7zex2ul],p[data-astro-cid-z7zex2ul] {
+        text-align: center
+    }
+}
+
+.ff[data-astro-cid-j7pv25f6] {
+    background: linear-gradient(96deg,#191029 2.6%,#564f66 55.92%,#1d132d 96.53%)
+}
+h1[data-astro-cid-shwxrd6l]{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 180%;
+    letter-spacing: -.02em;
+    max-width: 50ch;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
+.navibar{
+    color: #000;
+}
+@font-face {
+    font-family: myFont;
+    src: url(f5.ttf);
+}
+@font-face {
+    font-family: fac;
+    src: url(f6.ttf);
+}
+#firstbutton:hover{
+    transform: translateY(4);
+}
+#Sin{
+    font-size: 4rem;
+    color: #cbc9c9;
+}
+#Sin:hover{
+    color: white;
+}

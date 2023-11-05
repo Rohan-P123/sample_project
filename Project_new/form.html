@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+    background: linear-gradient(96deg,#191029 2.6%,#564f66 55.92%,#1d132d 96.53%)
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        label, input, textarea, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, textarea, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            padding: 0;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .navbar ul{
+            height: 50px;
+        }
+        .navbar ul{
+            list-style-type: none;
+            background-color: hsl(0, 0%, 25%); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0px;
+            justify-content: left;
+            overflow: hidden;
+        }
+        .navbar ul a{
+            /* margin-top: 10px */
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover{
+            transition-duration: 700ms;
+            transition-delay: 0.1s;
+            border-radius: 10% 10% 10% 10%;
+            background-color: hsl(0, 0%, 10%);
+        }
+        .navbar li{
+            float: left;
+        }
+        .layout{
+            color: white; 
+            display: block;
+            justify-content: space-evenly;
+        }
+        button{
+            background-color:rgb(0, 200, 0,0.5);/* linear-gradient(rgb(51, 138, 51) rgb(15, 250, 15)rgb(51, 138, 51) );*/
+            height: 2rem;
+            width: 8rem;
+            border-radius: 50rem;
+        }
+            </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <h1>Startup Application Form</h1>
+    <form >
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" ><br><br>
+
+        <label for="qualifications">Qualifications/Achievements:</label>
+        <textarea id="qualifications" name="qualifications" ></textarea><br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" ><br><br>
+
+        <label for="email">Email-Id:</label>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" name="mobile" ><br><br>
+
+        <label for="aadhar">Aadhar Details (PDF format):</label>
+        <input type="file" id="aadhar" name="aadhar" accept=".pdf" ><br><br>
+
+        <label for="pan">Pan Details (PDF format):</label>
+        <input type="file" id="pan" name="pan" accept=".pdf" ><br><br>
+
+        <h2>Start-Up Idea</h2>
+        <label for="description">Brief Description:</label>
+        <textarea id="description" name="description" ></textarea><br><br>
+
+        <label for="companySize">Company-Size:</label>
+<select id="companySize" name="companySize" >
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+</select><br><br>
+        <label for="targetAudience">Target Audience:</label>
+        <textarea id="targetAudience" name="targetAudience" ></textarea><br><br>
+
+        <label for="reason">Reason:</label>
+        <textarea id="reason" name="reason" ></textarea><br><br>
+
+        <label for="equity">Equity Demand:</label>
+        <input type="number" id="equity" name="equity" ><br><br>
+
+        <label for="budget">Budget Investment:</label>
+        <input type="number" id="budget" name="budget" ><br><br>
+
+        <label for="income">Annual Expected Income:</label>
+        <input type="number" id="income" name="income" ><br><br>
+
+        <label for="startupLevel">Start-Up Level:</label>
+        <select id="startupLevel" name="startupLevel" >
+            <option value="International">International</option>
+            <option value="National">National</option>
+        </select><br><br>
+
+        <button type="submit" onclick="Check()">Submit</button>
+    </form>
+    <script src='form.js'></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FeedList</title>
+    <script src="feedlist.js"></script>
+    <link rel="stylesheet" type="text/css" href="feedlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<style>
+    .btn{
+        color: black;
+    }
+</style>
+<body>
+    <script>
+        function checking(){
+            window.location.href="listview.html";
+            window.alert('Your response has been recorded');
+        }
+    </script>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="sampleForm">Sample Form</div>
+    <form>
+    <div class="layout">
+        <div class="name">Name : 
+            <input type="text" name="name" placeholder="Name">
+        </div>
+        <div class="age">Age : 
+            <input type="number" name="age" placeholder="Age">
+        </div>
+        <div class="Qualifications">Qualifications : 
+            <input type="text" name="qualifications" placeholder="Qualifications">
+        </div>
+        <div class="Profession">Profession : 
+            <input type="text" name="Profession" placeholder="Profession">
+        </div>
+        <div class="container">
+        <div class="gender">Gender : </div>
+            <ul>
+            <li>
+                <input type="radio" id="f-option" name="selector">
+                <label for="f-option">Male</label>
+                <div class="check"></div>
+            </li>
+            <li>
+                <input type="radio" id="s-option" name="selector">
+                <label for="s-option">Female</label>
+                <div class="check">
+                    <div class="inside"></div>
+                </div>
+            </li>
+        </div>
+        <div class="email">Email :
+            <input type="email" name="email" placeholder="example@mail.com">
+        </div>
+        <div class="phoneno">Mobile :
+            <input type="tel" name="phoneno" placeholder="+88012345678910">
+        </div>
+        <div class="Aadhar">Aadhar : 
+            <input type="text" name="aadhar" placeholder="aadhar">
+        </div>
+        <div class="PAN">PAN : 
+            <input type="text" name="PAN" placeholder="PAN">
+        </div>
+        <div class="youridea">Startup Ideas :<br><br>
+            <input type="text"  id="formsubm" placeholder="Write in detail">
+        </div>
+        <div class="targetAudience">Target Audience : 
+            <input type="number" name="targetAudience" placeholder="123..">
+        </div>
+        <div class="reason">Reason : 
+            <input type="text" name="reason" placeholder="Enter your reason">
+        </div>
+        <div class="equity">Equity : 
+            <input type="text" name="equity" placeholder="in %age">
+        </div>
+        <div class="budget"> Budget : 
+            <input type="text" name="budget" placeholder="in Rs">
+        </div>
+        <div class="income">Income : 
+            <input type="text" name="income" placeholder="in Rs">
+        </div>
+        <button type="submit" class="btn" onclick="checking()"><b><a id="arr" href="listview.html">Submit</a></b></div>
+    </div>
+    </form>
+    <script>
+        function checking(){
+            window.location.href="listview.html";
+        }
+    </script>
+</body>
+
+</html>
